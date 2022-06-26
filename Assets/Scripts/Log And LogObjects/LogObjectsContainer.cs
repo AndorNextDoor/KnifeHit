@@ -23,7 +23,7 @@ public class LogObjectsContainer : MonoBehaviour
             return;
         }
         
-        Destroy(Instantiate(part, transform.position, transform.rotation), 1);
+        Instantiate(part, transform.position, transform.rotation);
         Destroy(gameObject);
         UpdateApplesCount();
         gameui.UpdateUiApplesCount();

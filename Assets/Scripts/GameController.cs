@@ -22,7 +22,10 @@ public class GameController : MonoBehaviour
     private Destructible Destr;
     [SerializeField]
     private GameObject Bomb;
-
+    [SerializeField]
+    public Transform kniferot;
+    [SerializeField]
+    SkinController Skin;
 
 
     [SerializeField]
@@ -36,7 +39,7 @@ public class GameController : MonoBehaviour
         LogController = FindObjectOfType<LogRotation>();
         levelManager = FindObjectOfType<LevelManager>();
         levelManager.SetLevelZero();
-        KnifeCount = Random.Range(3, 6);
+        KnifeCount = Random.Range(1, 1);
         Instance = this;
         GameUI = GetComponent<GameUI>();
     }
@@ -66,7 +69,7 @@ public class GameController : MonoBehaviour
     }
     public void WinCheck(bool win)
     {
-        StartCoroutine("NextLevel", win);
+        StartCoroutine(NextLevel(win));
     }
     public void ClearKnives()
     {
@@ -75,11 +78,7 @@ public class GameController : MonoBehaviour
 
 
 
-    public void BasicLevelChanger()
-    {
-        LogController.ResetLogPos();
-
-    }
+ 
     public void StartFromZero()
     {
         LogController.ResetLogPos();
@@ -87,7 +86,7 @@ public class GameController : MonoBehaviour
         SpawnKnife();
 
     }
-    private IEnumerator NextLevel(bool win)
+    public IEnumerator NextLevel(bool win)
     {
         if (win)
         {
@@ -95,14 +94,23 @@ public class GameController : MonoBehaviour
             Destroy(Instantiate(Bomb, Bomb.transform.position, Quaternion.identity), 0.3f);
             levelManager.CurrentLevelModel.IsBossLevel = false;
             levelManager.CurrentLevelModel.IsLogRotating = false;
-
-            yield return new WaitForSeconds(1);
+           
+            win = false;
+            yield return new WaitForSeconds(0.5f);
+            Instantiate(LogPrefab);
+            Skin = FindObjectOfType<SkinController>();
             levelManager.NextLevel();
-            KnifeCount = Random.Range(3, 6);
+            Skin.SetLoverSkin();
+            KnifeCount = Random.Range(1, 1);
+            GameUI.SetInitialDisplayKnifeCount(KnifeCount);
             LogController = FindObjectOfType<LogRotation>();
             levelManager = FindObjectOfType<LevelManager>();
-            Instantiate(LogPrefab);
+            Destr = FindObjectOfType<Destructible>();
+            GameUI.UpdateUiLevelValue();
+          //  ObjectsController = FindObjectOfType<LogObjectsController>();
+            //ObjectsController.SpawnLogObjects();
             SpawnKnife();
+           
 
             
 
@@ -110,6 +118,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
+            Debug.Log(PlayerPrefs.GetInt("maxLevel"));
             GameUI.ShowRestartButton();
         }
     }

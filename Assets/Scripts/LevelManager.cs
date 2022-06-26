@@ -6,6 +6,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] public LevelModel CurrentLevelModel;
+    [SerializeField] public SkinController BossSkin;
 
     static LevelModel BasicLevel = new LevelModel
     {
@@ -56,6 +57,8 @@ public class LevelManager : MonoBehaviour
     }
     public void NextLevel()
     {
+        CheckAndSetMaxLevel();
+
         LevelModel nextLevel = CurrentLevelModel;
 
         nextLevel.LevelNumber++;
@@ -64,10 +67,17 @@ public class LevelManager : MonoBehaviour
 
         PlayerPrefs.SetInt("LevelNumber", nextLevel.LevelNumber);
 
-        if(nextLevel.LevelNumber % 4 == 0)
+        if(nextLevel.LevelNumber % 3 == 0)
         {
+            BossSkin.BossNum = 0;
             nextLevel.IsBossLevel = true;
             nextLevel.LogShakingSpeed = 5f;
+        }
+        if(nextLevel.LevelNumber % 6 == 0)
+        {
+            BossSkin.BossNum = 1;
+            nextLevel.IsBossLevel = true;
+            nextLevel.LogShakingSpeed = 14f;
         }
 
         if (nextLevel.LogMaxRotationSpeed > -1500)

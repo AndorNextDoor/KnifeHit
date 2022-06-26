@@ -16,7 +16,7 @@ public class Knife : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D Col;
     [SerializeField]
-    public float SpawnKnifeY = 1.5f;
+    public float SpawnKnifeY = 1f;
 
     private void Awake()
     {

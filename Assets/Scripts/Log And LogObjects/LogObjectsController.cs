@@ -13,13 +13,14 @@ public class LogObjectsController : MonoBehaviour
 
     public void Start()
     {
+        gameController = FindObjectOfType<GameController>();
         SpawnLogObjects();
     }
 
     public void SpawnLogObjects()
     {
-        int MaxKnives = Random.Range(2, 4);
-        int MaxLogObjects = Random.Range(1, 6);
+        int MaxKnives = Random.Range(3, 3);
+        int MaxLogObjects = Random.Range(4, 4);
         int totalMaxObjects = MaxKnives + MaxLogObjects;
 
         List<int> angles = GetRandomAnglesForSpawn(totalMaxObjects);

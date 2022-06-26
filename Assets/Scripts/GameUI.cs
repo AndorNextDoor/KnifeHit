@@ -43,7 +43,7 @@ public class GameUI : MonoBehaviour
     }
     public void UpdateUiApplesCount()
     {
-        textApplesCount.text = "Apples: " + PlayerPrefs.GetInt("ApplesCount", 0);
+        textApplesCount.text = "" + PlayerPrefs.GetInt("ApplesCount", 0);
     }
     public void UpdateUiLevelValue()
     {
