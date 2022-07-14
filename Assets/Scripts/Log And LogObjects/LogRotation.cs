@@ -15,9 +15,10 @@ public class LogRotation : MonoBehaviour
     private float TimeToChange; // Рандомное время до изменения вращения
     [SerializeField]
     private float LogRotationSpeedChanger; //Рандомная скорость вращения
-
     LevelManager Levelmanager;
-
+    private Vector3 BossPos;
+    private Vector3 TargetPos;
+    
     public void Start()
     {
         LogPos = transform.position;
@@ -25,8 +26,9 @@ public class LogRotation : MonoBehaviour
         Levelmanager = FindObjectOfType<LevelManager>();
         StartCoroutine(ChangeLogStats());
     }
-    public void Update()
+    public void FixedUpdate()
     {
+        LogShaking();
         LogRotationElement();
     }
 
@@ -35,7 +37,7 @@ public class LogRotation : MonoBehaviour
         if (Levelmanager.CurrentLevelModel.IsLogRotating)
         {
             RotationSpeed = Mathf.Lerp(RotationSpeed, LogRotationSpeedChanger, Levelmanager.CurrentLevelModel.SmoothLogRotation * Time.deltaTime);
-            Levelmanager.CurrentLevelModel.SmoothLogRotation = 0.6f;
+            Levelmanager.CurrentLevelModel.SmoothLogRotation = 0.4f;
         }
         else
         {
@@ -50,9 +52,11 @@ public class LogRotation : MonoBehaviour
     {
         while (true)
         {
+            TargetPos = new Vector3(Random.Range(-0.1f, 0.2f), Random.Range(-0.1f, 1.8f), 0f);
             TimeToChange = Random.Range(Levelmanager.CurrentLevelModel.MinTimeRotation, Levelmanager.CurrentLevelModel.MaxTimeRotation);
             LogRotationSpeedChanger = Random.Range(Levelmanager.CurrentLevelModel.LogMinRotationSpeed, Levelmanager.CurrentLevelModel.LogMaxRotationSpeed);
             yield return new WaitForSeconds(TimeToChange);
+            
         }
     }
 
@@ -61,11 +65,11 @@ public class LogRotation : MonoBehaviour
         transform.position = LogPos;
         transform.rotation = LogRot;
     }
-
+  
     void LogShaking()
     {
-        float distance = Mathf.Sin(Time.timeSinceLevelLoad * Levelmanager.CurrentLevelModel.LogShakingSpeed);
-        transform.position = new Vector3(0, distance + 2f, 0);
+        BossPos = transform.position;
+        transform.position = Vector3.Lerp(BossPos, TargetPos, Levelmanager.CurrentLevelModel.LogShakingSpeed);
     }
 }
 

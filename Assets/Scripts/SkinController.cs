@@ -32,4 +32,8 @@ public class SkinController : MonoBehaviour
         }
         
     }
+    public void SetBGSkin()
+    {
+
+    }
 }

@@ -9,9 +9,13 @@ public class SpawnLogObjects : MonoBehaviour
     [SerializeField]
     GameController gameController;
     [SerializeField]
-    public Sprite [] BasicSprite;
+    LevelManager levelManager;
+    [SerializeField]
+    GameObject KnifeSpawn;
+
     void Start()
     {
+        levelManager = FindObjectOfType<LevelManager>();
         gameController = FindObjectOfType<GameController>();
         SpawnLogObject();   
 
@@ -21,8 +25,8 @@ public class SpawnLogObjects : MonoBehaviour
     void SpawnLogObject ()
     {
         int[] Angles = new int[] { 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360 };
-        int Knives = Random.Range(1, 3);
-        int Asses = Random.Range(1, 4);
+        int Knives = levelManager.Knives;
+        int Asses = levelManager.Asses;
         int EveryObject = Knives + Asses;
         Vector3 KnifePos;
         string usedangle = " ";
@@ -34,7 +38,7 @@ public class SpawnLogObjects : MonoBehaviour
 
             if (i <= Knives - 1)
             {
-                knife = Instantiate(gameController.knifeObject, FindObjectOfType<LogRotation>().transform);
+                knife = Instantiate(KnifeSpawn, FindObjectOfType<LogRotation>().transform);
                 knife.GetComponent<Rigidbody2D>().isKinematic = true;
                 Destroy(knife.GetComponent<Knife>(), 0f);
 
@@ -71,8 +75,8 @@ public class SpawnLogObjects : MonoBehaviour
             usedangle = usedangle + " " + Angle;
 
                 
-            KnifePos.x = Mathf.Cos(Angles[Angle] * Mathf.PI / 180) * 1;
-            KnifePos.y = Mathf.Sin(Angles[Angle] * Mathf.PI / 180) * 1;
+            KnifePos.x = Mathf.Cos(Angles[Angle] * Mathf.PI / 180) * 1.1f;
+            KnifePos.y = Mathf.Sin(Angles[Angle] * Mathf.PI / 180) * 1.1f;
             KnifePos.z = 0;
             KnifePos += transform.position;
             knife.transform.position = KnifePos;

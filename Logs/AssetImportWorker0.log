@@ -1,30 +1,23 @@
-Unity Editor version:    2021.3.1f1 (3b70a0754835)
-Branch:                  2021.3/staging
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 11.6.1 (Build 20G224)
-Darwin version:          20.6.0
-Architecture:            x86_64
-Running under Rosetta:   NO
-Available memory:        4096 MB
 Using pre-set license
-Pro License: YES
+Built from '2021.3/staging' branch; Version is '2021.3.1f1 (3b70a0754835) revision 3895456'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ru' Physical Memory: 8142 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/MacOS/Unity
+X:\Unity Old\Unity 2021.3.1f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/andrey/Documents/GitHub/KnifeHit
+C:/Users/BooSick/Documents/GitHub/KnifeHit
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49405
-Successfully changed project path to: /Users/andrey/Documents/GitHub/KnifeHit
-/Users/andrey/Documents/GitHub/KnifeHit
+53643
+Successfully changed project path to: C:/Users/BooSick/Documents/GitHub/KnifeHit
+C:/Users/BooSick/Documents/GitHub/KnifeHit
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -54,310 +47,295 @@ Successfully changed project path to: /Users/andrey/Documents/GitHub/KnifeHit
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 299.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 51.09 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.1f1 (3b70a0754835)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/andrey/Documents/GitHub/KnifeHit/Assets
+[Subsystems] Discovering subsystems at path X:/Unity Old/Unity 2021.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/BooSick/Documents/GitHub/KnifeHit/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
-Color LCD preferred device: Intel HD Graphics 5000 (low power)
-Metal devices available: 1
-0: Intel HD Graphics 5000 (low power)
-Using device Intel HD Graphics 5000 (low power)
-Initializing Metal device caps: Intel HD Graphics 5000
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     8171 MB
+    Driver:   30.0.13023.4001
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56813
+Mono path[0] = 'X:/Unity Old/Unity 2021.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'X:/Unity Old/Unity 2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'X:/Unity Old/Unity 2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2021.3.1f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2021.3.1f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.006122 seconds.
+Register platform support module: X:/Unity Old/Unity 2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: X:/Unity Old/Unity 2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004214 seconds.
+Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 83.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 49.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.568 seconds
+- Completed reload, in  0.699 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1569ms)
-		BeginReloadAssembly (284ms)
+	ReloadAssembly (700ms)
+		BeginReloadAssembly (93ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (4ms)
-		EndReloadAssembly (1005ms)
-			LoadAssemblies (286ms)
-			RebuildTransferFunctionScriptingTraits (4ms)
-			SetupTypeCache (327ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (503ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (488ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (116ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (282ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (112ms)
+				InitializePlatformSupportModulesInManaged (58ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (84ms)
-				BeforeProcessingInitializeOnLoad (4ms)
-				ProcessInitializeOnLoadAttributes (205ms)
-				ProcessInitializeOnLoadMethodAttributes (97ms)
+				RefreshPlugins (50ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (118ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012512 seconds.
+Registered in 0.005659 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 67.02 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 48.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.469 seconds
+- Completed reload, in  1.227 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2471ms)
-		BeginReloadAssembly (365ms)
+	ReloadAssembly (1228ms)
+		BeginReloadAssembly (238ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (193ms)
-		EndReloadAssembly (1858ms)
-			LoadAssemblies (262ms)
+			CreateAndSetChildDomain (131ms)
+		EndReloadAssembly (867ms)
+			LoadAssemblies (112ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (525ms)
-			ReleaseScriptCaches (5ms)
-			RebuildScriptCaches (106ms)
-			SetupLoadedEditorAssemblies (853ms)
+			SetupTypeCache (207ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (431ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (24ms)
+				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (67ms)
-				BeforeProcessingInitializeOnLoad (100ms)
-				ProcessInitializeOnLoadAttributes (567ms)
-				ProcessInitializeOnLoadMethodAttributes (90ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
 				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launching external process: /Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2332 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (20.3 KB). Loaded Objects now: 2825.
-Memory consumption went from 224.2 MB to 224.1 MB.
-Total: 7.225902 ms (FindLiveObjects: 0.690519 ms CreateObjectMapping: 0.241916 ms MarkObjects: 6.218533 ms  DeleteObjects: 0.073215 ms)
+Unloading 2485 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (1.3 MB). Loaded Objects now: 2966.
+Memory consumption went from 139.6 MB to 138.3 MB.
+Total: 4.247900 ms (FindLiveObjects: 0.330400 ms CreateObjectMapping: 0.082400 ms MarkObjects: 3.383700 ms  DeleteObjects: 0.450300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 711.182799 seconds.
-  path: Assets/Sprites/RicardoGIf
-  artifactKey: Guid(cf9f668af59bc48389f5e3599c4da371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoGIf using Guid(cf9f668af59bc48389f5e3599c4da371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2cafe0e1bf3ff7ec898209f46454dc3') in 0.009219 seconds 
+  Time since last request: 130508.020809 seconds.
+  path: Assets/Scenes/A.asset
+  artifactKey: Guid(1710d5d99ae5739498fc9d8233b174d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/A.asset using Guid(1710d5d99ae5739498fc9d8233b174d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a98adf20d7d739b4004d3295dccc994') in 0.040185 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 32.290047 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0000_足ｮｩ-100.png
-  artifactKey: Guid(026b1d7abde354c41a7fab7ce7bc97e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0000_足ｮｩ-100.png using Guid(026b1d7abde354c41a7fab7ce7bc97e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb5959750ecbc03d36472dce96c92146') in 2.468815 seconds 
+  Time since last request: 45.264415 seconds.
+  path: Assets/Scenes/New Objects Data.asset
+  artifactKey: Guid(5ade0637684f6cb4f878ad14816a8d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Objects Data.asset using Guid(5ade0637684f6cb4f878ad14816a8d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '587f70f9eee37a63a23ccafdd05ec982') in 0.009073 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0011_足ｮｩ-89.png
-  artifactKey: Guid(81447aebe12684e0ba573062fdd09dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0011_足ｮｩ-89.png using Guid(81447aebe12684e0ba573062fdd09dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b796d49811d6b6e14acb540be11f1d5') in 0.049209 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004985 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.072 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1072ms)
+		BeginReloadAssembly (149ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (822ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (207ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (384ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2434 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (1.3 MB). Loaded Objects now: 2969.
+Memory consumption went from 134.9 MB to 133.6 MB.
+Total: 4.669700 ms (FindLiveObjects: 0.279700 ms CreateObjectMapping: 0.065700 ms MarkObjects: 3.939500 ms  DeleteObjects: 0.382800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0030_足ｮｩ-70.png
-  artifactKey: Guid(a32413d3d8d11418ba5f9d1cbca1debc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0030_足ｮｩ-70.png using Guid(a32413d3d8d11418ba5f9d1cbca1debc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7feb311d2980cf85b34f9cd823002653') in 0.044879 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005493 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.054 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1055ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (809ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (384ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2434 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (1.3 MB). Loaded Objects now: 2972.
+Memory consumption went from 134.9 MB to 133.6 MB.
+Total: 4.149300 ms (FindLiveObjects: 0.344600 ms CreateObjectMapping: 0.084800 ms MarkObjects: 3.393100 ms  DeleteObjects: 0.324900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0013_足ｮｩ-87.png
-  artifactKey: Guid(a7c2de65f2a724d03be6579370478755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0013_足ｮｩ-87.png using Guid(a7c2de65f2a724d03be6579370478755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b96456c2405533f76789e8d457a4d4') in 0.046862 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0005_足ｮｩ-95.png
-  artifactKey: Guid(d675bb7f3848e40e79819f598268d965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0005_足ｮｩ-95.png using Guid(d675bb7f3848e40e79819f598268d965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d3dfd33a1b17f10a906447789c982c') in 0.041965 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0017_足ｮｩ-83.png
-  artifactKey: Guid(6bcb95b02c35e4b16bbebbcc2e02682f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0017_足ｮｩ-83.png using Guid(6bcb95b02c35e4b16bbebbcc2e02682f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '661f3787b12cdd00666007aeba1138a1') in 0.047850 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000103 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0003_足ｮｩ-97.png
-  artifactKey: Guid(ddd673c8684a84c76ac4b3ffe5938f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0003_足ｮｩ-97.png using Guid(ddd673c8684a84c76ac4b3ffe5938f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd37b3b64d1919c01234993a9af8560f4') in 0.041540 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0001_足ｮｩ-99.png
-  artifactKey: Guid(292b1666348ed442586179b449a9f900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0001_足ｮｩ-99.png using Guid(292b1666348ed442586179b449a9f900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b8d34487e39a1d5067de11496ed587') in 0.038141 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0009_足ｮｩ-91.png
-  artifactKey: Guid(63bdbfcc0269b422f9c2295ac193d820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0009_足ｮｩ-91.png using Guid(63bdbfcc0269b422f9c2295ac193d820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bec99f7e5d442c2a697d7e088ea36b49') in 0.042494 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0028_足ｮｩ-72.png
-  artifactKey: Guid(d0cd43dde94f94778a9567763e49e005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0028_足ｮｩ-72.png using Guid(d0cd43dde94f94778a9567763e49e005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ca43654d924a9677aeaa22a8a6740d6') in 0.044385 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0022_足ｮｩ-78.png
-  artifactKey: Guid(d9328f4b50ece443ab3682f53edc10d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0022_足ｮｩ-78.png using Guid(d9328f4b50ece443ab3682f53edc10d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe161e43c266c9068c8efe54e730a529') in 0.052642 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0026_足ｮｩ-74.png
-  artifactKey: Guid(4e0bd9f5a62d94938977991bf6033fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0026_足ｮｩ-74.png using Guid(4e0bd9f5a62d94938977991bf6033fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f1bd8f1bde78ce75255af50689c3525') in 0.046060 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0008_足ｮｩ-92.png
-  artifactKey: Guid(8fb7a3df84fb447239f8184efcf32e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0008_足ｮｩ-92.png using Guid(8fb7a3df84fb447239f8184efcf32e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70028d94b101c27a1f79656abb835ee1') in 0.050830 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000099 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0015_足ｮｩ-85.png
-  artifactKey: Guid(9953092a4ba0f490cad74097aa94993d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0015_足ｮｩ-85.png using Guid(9953092a4ba0f490cad74097aa94993d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b0838e10c6a9fc5fc7887283bc61f50') in 0.044725 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0012_足ｮｩ-88.png
-  artifactKey: Guid(409d06b986b4d4ec5be63b49a05eff52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0012_足ｮｩ-88.png using Guid(409d06b986b4d4ec5be63b49a05eff52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45df4a2c59767d9877408ebae08d16f7') in 0.040421 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000122 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0027_足ｮｩ-73.png
-  artifactKey: Guid(c56fbe27fdc10491697dd17adb617897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0027_足ｮｩ-73.png using Guid(c56fbe27fdc10491697dd17adb617897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '416d796734a71d97fdff4189d2651485') in 0.041071 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000108 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0002_足ｮｩ-98.png
-  artifactKey: Guid(e35c08e4c5cef452c98d50c1565c6807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0002_足ｮｩ-98.png using Guid(e35c08e4c5cef452c98d50c1565c6807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d67d48eedd7c0ca4bb1809cdfc2f8f7') in 0.051764 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0007_足ｮｩ-93.png
-  artifactKey: Guid(e3225979f7d0447fea8fa133dd420f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0007_足ｮｩ-93.png using Guid(e3225979f7d0447fea8fa133dd420f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7addcdaef0a8208a1c573db6e48b9d') in 0.046988 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0019_足ｮｩ-81.png
-  artifactKey: Guid(705ceaf37da25415394cb90203c7b448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0019_足ｮｩ-81.png using Guid(705ceaf37da25415394cb90203c7b448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7449be332da950a53d0866834bd3989') in 0.042304 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0004_足ｮｩ-96.png
-  artifactKey: Guid(f7ef3590f8d8f46ca9021ad6d13624cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0004_足ｮｩ-96.png using Guid(f7ef3590f8d8f46ca9021ad6d13624cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff594ad5ef7726f7ecfd992f9dce7437') in 0.043781 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000108 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0006_足ｮｩ-94.png
-  artifactKey: Guid(a5d7859636b3c469d9d1de705bd758f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0006_足ｮｩ-94.png using Guid(a5d7859636b3c469d9d1de705bd758f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f200e089fc6865aa484772f86a587024') in 0.041907 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000103 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0018_足ｮｩ-82.png
-  artifactKey: Guid(89dc790b5374143ef9066852753835c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0018_足ｮｩ-82.png using Guid(89dc790b5374143ef9066852753835c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '209899a6a2e0dfae91093efe486dd4db') in 0.041392 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0021_足ｮｩ-79.png
-  artifactKey: Guid(4f4af574daf064ec99881809813e9d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0021_足ｮｩ-79.png using Guid(4f4af574daf064ec99881809813e9d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4079b305c708d05b45843ba761f909d0') in 0.040444 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000109 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0024_足ｮｩ-76.png
-  artifactKey: Guid(4fa54d702873a49bc84056eb59014628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0024_足ｮｩ-76.png using Guid(4fa54d702873a49bc84056eb59014628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b99fe07a7a92e303dd6a87e97c9ebdca') in 0.041807 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000886 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0010_足ｮｩ-90.png
-  artifactKey: Guid(d902b72bdf1fc49a2ac40b0923800985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0010_足ｮｩ-90.png using Guid(d902b72bdf1fc49a2ac40b0923800985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a46092c535359c3cf677a580c40e1c4') in 0.054155 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0023_足ｮｩ-77.png
-  artifactKey: Guid(512904b749a184a59a5370181b80dc43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0023_足ｮｩ-77.png using Guid(512904b749a184a59a5370181b80dc43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f43ed9e2c999a2ad3085b4aabb53c6f0') in 0.044175 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000102 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0020_足ｮｩ-80.png
-  artifactKey: Guid(35dc0fc793d4648869e39436ad57af39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0020_足ｮｩ-80.png using Guid(35dc0fc793d4648869e39436ad57af39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c75d5139310a82c72a938902912376') in 0.040626 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0014_足ｮｩ-86.png
-  artifactKey: Guid(dba25d1854757444184d28b0e1a059a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0014_足ｮｩ-86.png using Guid(dba25d1854757444184d28b0e1a059a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392c79afc785c4ae4d0dbb0d90b1e746') in 0.047677 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0025_足ｮｩ-75.png
-  artifactKey: Guid(01344c9b7aa2b40219e0eaf4d6e775cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0025_足ｮｩ-75.png using Guid(01344c9b7aa2b40219e0eaf4d6e775cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0d63d716a11b8a101650047f9620ea') in 0.055983 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000101 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0016_足ｮｩ-84.png
-  artifactKey: Guid(87ff101d6bde44d1d9fb36b1da9db01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0016_足ｮｩ-84.png using Guid(87ff101d6bde44d1d9fb36b1da9db01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5ebd7d5c00d6d7995fdd68a4ef9cf96') in 0.054795 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000303 seconds.
-  path: Assets/Sprites/RicardoBossAnim/ezgif_0029_足ｮｩ-71.png
-  artifactKey: Guid(4bfb0649f01be45d59f5f5dfafd2f86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RicardoBossAnim/ezgif_0029_足ｮｩ-71.png using Guid(4bfb0649f01be45d59f5f5dfafd2f86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4b917e3b0a98f851f506fb9b2386cc') in 0.047150 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005064 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.054 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1055ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (809ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (386ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2434 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (1.3 MB). Loaded Objects now: 2975.
+Memory consumption went from 134.9 MB to 133.6 MB.
+Total: 4.413000 ms (FindLiveObjects: 0.369300 ms CreateObjectMapping: 0.100600 ms MarkObjects: 3.640000 ms  DeleteObjects: 0.301300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

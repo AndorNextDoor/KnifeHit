@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8274677380798324199}
   - component: {fileID: 8274677380798324198}
   - component: {fileID: 899915680}
+  - component: {fileID: 562965399}
   m_Layer: 0
   m_Name: Brevnishko
   m_TagString: Log
@@ -30,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8274677380798324221}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.009419501, y: 1.01, z: 0}
-  m_LocalScale: {x: 1.0306112, y: 1.0306112, z: 1.0306112}
+  m_LocalPosition: {x: 0, y: 1.01, z: 0}
+  m_LocalScale: {x: 1.15, y: 1.15, z: 1.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e5a67732917d54d168ee640b07486718, type: 3}
-  m_Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
+  m_Color: {r: 0.7529412, g: 0.7529412, b: 0.7529412, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -138,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c41e5b7f405eb54d863801dd2a6103c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LogPos: {x: 0, y: 0, z: 0}
+  LogPos: {x: 0, y: 1.01, z: 0}
   LogRot: {x: 0, y: 0, z: 0, w: 0}
   RotationSpeed: 0
   TimeToChange: 0
@@ -171,6 +172,20 @@ MonoBehaviour:
   LogObjects:
   - {fileID: 6386240529568275297, guid: e98157074c4cbbc46ba25b8461f4e307, type: 3}
   gameController: {fileID: 0}
-  BasicSprite:
-  - {fileID: 21300000, guid: 6c01009be35de4e9d949af731a751321, type: 3}
-  - {fileID: 21300000, guid: a6bd3187c597d4cd58a373977540eecb, type: 3}
+  levelManager: {fileID: 0}
+  KnifeSpawn: {fileID: 1489033749290500784, guid: fc173a99433906d40a0b63092afd7681, type: 3}
+--- !u!114 &562965399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8274677380798324221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d64fc2d8d7e3148b24122dd3be53e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 8274677380798324216}
+  color: {r: 0.8584906, g: 0.7564436, b: 0.84343445, a: 1}
+  BaseColor: {r: 0.7529412, g: 0.7529412, b: 0.7529412, a: 1}
