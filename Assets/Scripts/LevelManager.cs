@@ -26,7 +26,7 @@ public class LevelManager : MonoBehaviour
         MaxTimeRotation = 2.5f,
         IsLogRotating = true,
 
-        Knives = 6,
+        Knives = 0,
         Asses = 0,
         LogShakingSpeed = 0f,
 
@@ -74,7 +74,14 @@ public class LevelManager : MonoBehaviour
         nextLevel.IsBossLevel = false;
 
         PlayerPrefs.SetInt("LevelNumber", nextLevel.LevelNumber);
-        if(nextLevel.LevelNumber == 1)
+        if (nextLevel.LevelNumber == 0)
+        {
+            gameController = FindObjectOfType<GameController>();
+            Knives = 2;
+            Asses = 1;
+            gameController.KnifeCount = 6;
+        }
+        if (nextLevel.LevelNumber == 1)
         {
             gameController = FindObjectOfType<GameController>();
             Knives = 2;

@@ -83,7 +83,7 @@ public class Knife : MonoBehaviour
             rb.velocity = new Vector2(0, 0);
             rb.bodyType = RigidbodyType2D.Kinematic;
             this.transform.SetParent(collision.collider.transform);
-            this.transform.localScale = new Vector3(0.3f, 0.4f);
+            this.transform.localScale = new Vector3(0.4f, 0.4f);
             GameController.Instance.OnSuccessufulKnifeHit();
             Destroy(this.GetComponent<Knife>());
         }

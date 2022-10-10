@@ -15,8 +15,12 @@ public class PauseMenu : MonoBehaviour
     }
     public void Pause()
     {
-        knife = FindObjectOfType<Knife>();
-        knife.GetComponent<Knife>().gameObject.SetActive(false);
+        if (FindObjectOfType<Knife>())
+        {
+            knife = FindObjectOfType<Knife>();
+            knife.GetComponent<Knife>().gameObject.SetActive(false);
+        }
+
         Time.timeScale = 0f;
     }
     public void MainMenu()

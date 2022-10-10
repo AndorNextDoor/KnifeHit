@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 442587341858051916}
   - component: {fileID: 5581515480895007157}
   - component: {fileID: 6773658868386562209}
+  - component: {fileID: -5346092709595386698}
   m_Layer: 5
   m_Name: KnifeIcon
   m_TagString: KnifeIcon
@@ -66,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4642506f0cb524d6db268db19b4292f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2bc3606b1a0953741a6115f665d33e90, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -76,3 +77,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-5346092709595386698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7282515920210436664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c2db6ed807d54e4faa7e6e284749b60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knife: {fileID: 1489033749290500813, guid: f77bd1bf1ba3a2b43a74a244761a7396, type: 3}

@@ -8,6 +8,8 @@ TagManager:
   - Log
   - C4
   - KnifeIcon
+  - SkinView
+  - CanvasSkin
   layers:
   - Default
   - TransparentFX

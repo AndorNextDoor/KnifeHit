@@ -36,27 +36,28 @@ public class SpawnLogObjects : MonoBehaviour
         {
             GameObject knife = null;
 
-            if (i <= Knives - 1)
+
+            if (i < Knives)
             {
                 knife = Instantiate(KnifeSpawn, FindObjectOfType<LogRotation>().transform);
                 knife.GetComponent<Rigidbody2D>().isKinematic = true;
                 Destroy(knife.GetComponent<Knife>(), 0f);
-
-
-
-
-
             }
             else
             {
-                GameObject randomObject = LogObjects[Random.Range(0, LogObjects.Length)];
 
+                GameObject randomObject;
+                
                 float randomValue = Random.Range(0f, 1f);
-                float currentObjcetsSpawnProbabilityLow = randomObject.GetComponent<LogObjectsContainer>().LogData.SpawnProbabilityLow;
-                float currentObjcetsSpawnProbabilityHigh = randomObject.GetComponent<LogObjectsContainer>().LogData.SpawnProbabilityHigh;
-                if (randomValue < currentObjcetsSpawnProbabilityLow && randomValue > currentObjcetsSpawnProbabilityHigh)
+
+                
+                if (randomValue < 0.95f)
                 {
-                    return;
+                    randomObject = LogObjects[0];
+                }
+                else
+                {
+                    randomObject = LogObjects[1];
                 }
 
                 knife = Instantiate(randomObject);

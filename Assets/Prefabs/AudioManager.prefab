@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8510042084963586248}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -76,4 +76,68 @@ MonoBehaviour:
     Priority: 0
     mixer: {fileID: 24300002, guid: e85c4653c14f9ff4fa55aa7248db2798, type: 2}
     loop: 1
+    source: {fileID: 0}
+  - Name: Fisting
+    clip: {fileID: 8300000, guid: c5c4bf0ca02c3224a84edba3fd7a61d4, type: 3}
+    Volume: 0.15
+    Pitch: 1
+    Priority: 0
+    mixer: {fileID: 24300002, guid: f8af32592d55f744380d8e14e865aea5, type: 2}
+    loop: 0
+    source: {fileID: 0}
+  - Name: CmonLetsGo
+    clip: {fileID: 8300000, guid: 5f12e06a5fb99494898f46f6d4a690fe, type: 3}
+    Volume: 0.15
+    Pitch: 1
+    Priority: 0
+    mixer: {fileID: 24300002, guid: f8af32592d55f744380d8e14e865aea5, type: 2}
+    loop: 0
+    source: {fileID: 0}
+  - Name: TurnsMeOn
+    clip: {fileID: 8300000, guid: 72e9c35bd37b43b4b86e1c0db9c7437f, type: 3}
+    Volume: 0.15
+    Pitch: 1
+    Priority: 0
+    mixer: {fileID: 24300002, guid: f8af32592d55f744380d8e14e865aea5, type: 2}
+    loop: 0
+    source: {fileID: 0}
+  - Name: Mhm
+    clip: {fileID: 8300000, guid: ba574ef3e0c1bc14189bce676b42cb7a, type: 3}
+    Volume: 0.15
+    Pitch: 1
+    Priority: 0
+    mixer: {fileID: 24300002, guid: f8af32592d55f744380d8e14e865aea5, type: 2}
+    loop: 0
+    source: {fileID: 0}
+  - Name: WillYouShowMe
+    clip: {fileID: 8300000, guid: 92a7fe191a1ddea48a8e4a20325f88cd, type: 3}
+    Volume: 0.15
+    Pitch: 1
+    Priority: 0
+    mixer: {fileID: 24300002, guid: f8af32592d55f744380d8e14e865aea5, type: 2}
+    loop: 0
+    source: {fileID: 0}
+  - Name: RightHappyTo
+    clip: {fileID: 8300000, guid: 37b69a17e8a15aa43bd20373d4261cdf, type: 3}
+    Volume: 0.15
+    Pitch: 1
+    Priority: 0
+    mixer: {fileID: 24300002, guid: f8af32592d55f744380d8e14e865aea5, type: 2}
+    loop: 0
+    source: {fileID: 0}
+  - Name: AssWeCan
+    clip: {fileID: 8300000, guid: 84346730426249745aae59ca2e4fab14, type: 3}
+    Volume: 0.15
+    Pitch: 1
+    Priority: 0
+    mixer: {fileID: 24300002, guid: f8af32592d55f744380d8e14e865aea5, type: 2}
+    loop: 0
+    source: {fileID: 0}
+  - Name: WhatAHell
+    clip: {fileID: 8300000, guid: 891e48e197f2f344ba1b4c64fb3d9262, type: 3}
+    Volume: 0.15
+    Pitch: 1
+    Priority: 0
+    mixer: {fileID: 24300002, guid: f8af32592d55f744380d8e14e865aea5, type: 2}
+    loop: 0
     source: {fileID: 0}

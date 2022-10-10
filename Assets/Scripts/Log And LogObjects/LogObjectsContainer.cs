@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LogObjectsContainer : MonoBehaviour
 {
-    public LogObjectsData LogData;
     public ParticleSystem part;
     public GameUI gameui;
     // Start is called before the first frame update
@@ -27,7 +26,6 @@ public class LogObjectsContainer : MonoBehaviour
         Destroy(gameObject);
         UpdateApplesCount();
         gameui.UpdateUiApplesCount();
-        
     }
     public void UpdateApplesCount()
     {

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using EZCameraShake;
 
 [RequireComponent(typeof(GameUI))]
 public class GameController : MonoBehaviour
@@ -19,8 +20,6 @@ public class GameController : MonoBehaviour
     [SerializeField]
     public GameObject knifeObject;
     [SerializeField]
-    private Destructible Destr;
-    [SerializeField]
     private GameObject Bomb;
     [SerializeField]
     public Transform kniferot;
@@ -28,6 +27,7 @@ public class GameController : MonoBehaviour
     SkinController Skin;
     [SerializeField]
     AudioManager audioManager;
+    
  
 
 
@@ -39,6 +39,8 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
+        Instantiate(LogPrefab);
+        // destr = FindObjectOfType<Destructible>();
         audioManager = FindObjectOfType<AudioManager>();
         LogController = FindObjectOfType<LogRotation>();
         levelManager = FindObjectOfType<LevelManager>();
@@ -50,6 +52,10 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+
+        Skin = FindObjectOfType<SkinController>();
+        Skin.SetLoverSkin();
+        PlayerPrefs.SetInt("FirstOpen", 1);
         GameUI.SetInitialDisplayKnifeCount(KnifeCount);
         SpawnKnife();
     }
@@ -69,16 +75,13 @@ public class GameController : MonoBehaviour
     private void SpawnKnife()
     {
         KnifeCount--;
-        Instantiate(knifeObject, KnifeSpawnPosition, Quaternion.identity); 
+        Instantiate(knifeObject, KnifeSpawnPosition,Quaternion.identity); 
     }
     public void WinCheck(bool win)
     {
         StartCoroutine(NextLevel(win));
     }
-    public void ClearKnives()
-    {
-      //  foreach
-    }
+
 
 
 
@@ -90,36 +93,48 @@ public class GameController : MonoBehaviour
         SpawnKnife();
 
     }
+
     public IEnumerator NextLevel(bool win)
     {
         yield return new WaitForSeconds(0.1f);
         if (win)
         {
+
+            CameraShaker.Instance.ShakeOnce(3, 3, .1f, 1);
+            audioManager.Play(Skin.Sound);
             if (GameObject.Find("RicardoFlexitAnim(Clone)"))
             {
                 Destroy(GameObject.Find("RicardoFlexitAnim(Clone)"));
             }
             GameUI.DestroyKnifeCount();
-            Destr.DestroyLog();
-            Destroy(Instantiate(Bomb, Bomb.transform.position, Quaternion.identity), 0.3f);
+ 
+            LogController.GetComponent<ParticleSystem>().Play();
+            LogController.GetComponent<Animation>().Play("BrevnoEnd");
+            yield return new WaitForSeconds(0.5f);
+            Destroy(LogController.gameObject);
+         
             levelManager.CurrentLevelModel.IsBossLevel = false;
             levelManager.CurrentLevelModel.IsLogRotating = false;
            
             win = false;
             yield return new WaitForSeconds(0.5f);
             Instantiate(LogPrefab);
-            Skin = FindObjectOfType<SkinController>();
-            KnifeCount = Random.Range(3, 6);
+            Skin.SetLoverSkin();
+
+
+
+
             levelManager.Knives = Random.Range(1, 3);
-            levelManager.Asses = Random.Range(1, 5);
+            levelManager.Asses = Random.Range(0, 9);
             levelManager.CurrentLevelModel.LogShakingSpeed = 0f;
             levelManager.NextLevel();
             Skin.SetLoverSkin();
-           
+            yield return new WaitForSeconds(0.2f);
+            KnifeCount = Random.Range(3, 6);
             GameUI.SetInitialDisplayKnifeCount(KnifeCount);
             LogController = FindObjectOfType<LogRotation>();
             levelManager = FindObjectOfType<LevelManager>();
-            Destr = FindObjectOfType<Destructible>();
+
             GameUI.UpdateUiLevelValue();
             SpawnKnife();
             
@@ -130,12 +145,11 @@ public class GameController : MonoBehaviour
         }
         else
         {
+            CameraShaker.Instance.ShakeOnce(3, 3, .1f, 1);
             yield return new WaitForSeconds(0.2f);
-            
-            
             GameUI.ShowRestartButton();
             yield return new WaitForSeconds(0.2f);
-            audioManager.Play("DoYouLike");
+            audioManager.Play("WhatAHell");
         }
     }
     public void RestartTheGame()

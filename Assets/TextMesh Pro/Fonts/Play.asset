@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Play
   m_EditorClassIdentifier: 
   colorMode: 3
-  topLeft: {r: 0.3490566, g: 0.22481878, b: 0.09022782, a: 1}
-  topRight: {r: 1, g: 0.6398335, b: 0.29622638, a: 1}
-  bottomLeft: {r: 1, g: 0.6494458, b: 0, a: 1}
-  bottomRight: {r: 0.07428479, g: 1, b: 0, a: 1}
+  topLeft: {r: 0.2742435, g: 0.2924528, b: 0.27518895, a: 1}
+  topRight: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
+  bottomLeft: {r: 0.26990032, g: 0.09633321, b: 0.38679248, a: 1}
+  bottomRight: {r: 0.29875448, g: 0.109803915, b: 0.62352943, a: 1}

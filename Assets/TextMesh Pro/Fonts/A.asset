@@ -2401,9 +2401,10 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Avenixel-Regular SDF Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords:
+  m_ValidKeywords:
+  - BEVEL_ON
   - UNDERLAY_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -2422,7 +2423,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FaceTex:
-        m_Texture: {fileID: 2800000, guid: a6bd3187c597d4cd58a373977540eecb, type: 3}
+        m_Texture: {fileID: 2800000, guid: aed3d966db4eadc43abbf4d3f349d9af, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: -0.04}
     - _MainTex:
@@ -2430,17 +2431,17 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: aed3d966db4eadc43abbf4d3f349d9af, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _Ambient: 0.5
-    - _Bevel: 0.5
+    - _Bevel: 0.72
     - _BevelClamp: 0
-    - _BevelOffset: 0
-    - _BevelRoundness: 0
-    - _BevelWidth: 0
+    - _BevelOffset: 0.22
+    - _BevelRoundness: 0.117
+    - _BevelWidth: 0.018
     - _BumpFace: 0
     - _BumpOutline: 0
     - _ColorMask: 15
@@ -2462,7 +2463,7 @@ Material:
     - _OutlineUVSpeedY: 0
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
-    - _Reflectivity: 10
+    - _Reflectivity: 12.1
     - _ScaleRatioA: 0.85714287
     - _ScaleRatioB: 0.6964286
     - _ScaleRatioC: 0.3412193
@@ -2470,7 +2471,7 @@ Material:
     - _ScaleY: 1
     - _ShaderFlags: 0
     - _Sharpness: 0
-    - _SpecularPower: 2
+    - _SpecularPower: 3.64
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -2489,10 +2490,10 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FaceColor: {r: 2.297397, g: 2.297397, b: 2.297397, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}

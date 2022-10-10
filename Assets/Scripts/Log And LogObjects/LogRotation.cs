@@ -18,16 +18,21 @@ public class LogRotation : MonoBehaviour
     LevelManager Levelmanager;
     private Vector3 BossPos;
     private Vector3 TargetPos;
-    
+    public void Awake()
+    {
+
+    }
     public void Start()
     {
         LogPos = transform.position;
         LogRot = transform.rotation;
         Levelmanager = FindObjectOfType<LevelManager>();
         StartCoroutine(ChangeLogStats());
+
     }
     public void FixedUpdate()
     {
+        
         LogShaking();
         LogRotationElement();
     }
@@ -52,7 +57,7 @@ public class LogRotation : MonoBehaviour
     {
         while (true)
         {
-            TargetPos = new Vector3(Random.Range(-0.1f, 0.2f), Random.Range(-0.1f, 1.8f), 0f);
+            TargetPos = new Vector3(Random.Range(-0.1f, 0.2f), Random.Range(-0.1f, 1.8f), -1f);
             TimeToChange = Random.Range(Levelmanager.CurrentLevelModel.MinTimeRotation, Levelmanager.CurrentLevelModel.MaxTimeRotation);
             LogRotationSpeedChanger = Random.Range(Levelmanager.CurrentLevelModel.LogMinRotationSpeed, Levelmanager.CurrentLevelModel.LogMaxRotationSpeed);
             yield return new WaitForSeconds(TimeToChange);

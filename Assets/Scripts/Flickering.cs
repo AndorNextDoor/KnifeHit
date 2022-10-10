@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Flickering : MonoBehaviour
 {
-    public SpriteRenderer spriteRenderer;
+    SpriteRenderer spriteRenderer;
     public Color color;
     public Color BaseColor;
     public void Flick()
@@ -13,7 +13,7 @@ public class Flickering : MonoBehaviour
     }
    public IEnumerator ColorFlickering()
     {
-
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.color = color;
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.color = BaseColor;
